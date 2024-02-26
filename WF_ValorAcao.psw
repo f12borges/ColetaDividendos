@@ -9,8 +9,8 @@
     <created_user>fernando.borges</created_user>
     <created_date>2024&#x2f;02&#x2f;21 19&#x3a;43&#x3a;48.568</created_date>
     <modified_user>fernando.borges</modified_user>
-    <modified_date>2024&#x2f;02&#x2f;23 17&#x3a;41&#x3a;27.610</modified_date>
-    <fileHash>aaf4917886065b3e6f644880aed5655f</fileHash>
+    <modified_date>2024&#x2f;02&#x2f;26 16&#x3a;18&#x3a;52.936</modified_date>
+    <fileHash>d2dd71fa8becc21965208a9b2f1c9ddd</fileHash>
     <stepEntryHash>8836e9129abaeb4545602d78afc48757</stepEntryHash>
 
     <directory>&#x2f;</directory>
@@ -87,44 +87,44 @@
   </info>
   <order>
     <hop>
-      <from>Delay row</from>
-      <to>Web Get Value</to>
+      <from>1</from>
+      <to>Get valor</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Set Value</from>
-      <to>Delay row</to>
+      <from>Set Acao</from>
+      <to>1</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web URL Navigation</from>
-      <to>Web Click</to>
+      <from>Google Finance</from>
+      <to>Pesquisar Click</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Click</from>
-      <to>Web Set Value</to>
+      <from>Pesquisar Click</from>
+      <to>Set Acao</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Get Value</from>
+      <from>Get valor</from>
       <to>Copy rows to result</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
       <from>Copy rows to result</from>
-      <to>Write to log 2</to>
+      <to>Write to log</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Get Variables</from>
-      <to>Web URL Navigation</to>
+      <from>Get Acao</from>
+      <to>Google Finance</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
@@ -155,7 +155,7 @@
     </step>
 
   <step>
-    <name>Delay row</name>
+    <name>1</name>
     <type>Delay</type>
     <description/>
     <distribute>Y</distribute>
@@ -182,7 +182,7 @@
     </step>
 
   <step>
-    <name>Get Variables</name>
+    <name>Get Acao</name>
     <type>GetVariable</type>
     <description/>
     <distribute>N</distribute>
@@ -257,7 +257,7 @@
     </step>
 
   <step>
-    <name>Web Click</name>
+    <name>Pesquisar Click</name>
     <type>ClickStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -291,7 +291,7 @@
     </step>
 
   <step>
-    <name>Web Get Value</name>
+    <name>Get valor</name>
     <type>GetTextStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -329,7 +329,7 @@
     </step>
 
   <step>
-    <name>Web Set Value</name>
+    <name>Set Acao</name>
     <type>SetTextStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -363,7 +363,7 @@
     </step>
 
   <step>
-    <name>Web URL Navigation</name>
+    <name>Google Finance</name>
     <type>UrlNavigationStep</type>
     <description/>
     <distribute>N</distribute>
@@ -391,7 +391,7 @@
     </step>
 
   <step>
-    <name>Write to log 2</name>
+    <name>Write to log</name>
     <type>WriteToLog</type>
     <description/>
     <distribute>Y</distribute>

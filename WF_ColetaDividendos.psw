@@ -9,9 +9,9 @@
     <created_user>fernando.borges</created_user>
     <created_date>2024&#x2f;02&#x2f;21 18&#x3a;02&#x3a;00.516</created_date>
     <modified_user>fernando.borges</modified_user>
-    <modified_date>2024&#x2f;02&#x2f;23 17&#x3a;42&#x3a;41.002</modified_date>
-    <fileHash>f27692cbd3bb9b7068abc41a49faa4ae</fileHash>
-    <stepEntryHash>29245fbcd0366cdce4332401b3ba165e</stepEntryHash>
+    <modified_date>2024&#x2f;02&#x2f;26 16&#x3a;16&#x3a;53.152</modified_date>
+    <fileHash>95bbf1e54e50427ea0d7c6063ba32a63</fileHash>
+    <stepEntryHash>15ab7ab0427f779b63aa58b8d42fbf2a</stepEntryHash>
 
     <directory>&#x2f;</directory>
     <parameters>
@@ -39,37 +39,37 @@
   </info>
   <order>
     <hop>
-      <from>Replace in string</from>
-      <to>Workflow Executor</to>
+      <from>Ajuste Pagamento</from>
+      <to>ValorAcao</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
       <from>Write to log</from>
-      <to>Microsoft Excel Writer</to>
+      <to>Exporta&#xe7;&#xe3;o Excel</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Microsoft Excel Writer</from>
+      <from>Exporta&#xe7;&#xe3;o Excel</from>
       <to>Exit Browser</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Start Browser</from>
-      <to>Web Get Value</to>
+      <from>Investidor10</from>
+      <to>Get Acao</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Get Value</from>
-      <to>Replace in string</to>
+      <from>Get Acao</from>
+      <to>Ajuste Pagamento</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Workflow Executor</from>
+      <from>ValorAcao</from>
       <to>Write to log</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
@@ -102,7 +102,7 @@
     </step>
 
   <step>
-    <name>Microsoft Excel Writer</name>
+    <name>Exporta&#xe7;&#xe3;o Excel</name>
     <type>TypeExitExcelWriterStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -231,7 +231,7 @@
     </step>
 
   <step>
-    <name>Replace in string</name>
+    <name>Ajuste Pagamento</name>
     <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
@@ -269,7 +269,7 @@
     </step>
 
   <step>
-    <name>Start Browser</name>
+    <name>Investidor10</name>
     <type>BeginStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -308,7 +308,7 @@
     </step>
 
   <step>
-    <name>Web Get Value</name>
+    <name>Get Acao</name>
     <type>GetTextStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -370,7 +370,7 @@
     </step>
 
   <step>
-    <name>Workflow Executor</name>
+    <name>ValorAcao</name>
     <type>WorkflowExecutor</type>
     <description/>
     <distribute>Y</distribute>
@@ -383,7 +383,7 @@
     <specification_method>filename</specification_method>
     <trans_object_id/>
     <trans_name/>
-    <filename>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;WF2.psw</filename>
+    <filename>&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x2f;WF_ValorAcao.psw</filename>
     <directory_path/>
     <group_size>1</group_size>
     <group_field/>
